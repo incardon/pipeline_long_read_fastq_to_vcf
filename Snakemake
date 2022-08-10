@@ -1,0 +1,11 @@
+
+
+rule fastq_to_sam_with_minimap:
+    input:
+        "data/{reference}.fa",
+        "data/samples/A.fastq"
+    output:
+        "output/{sample}.sam"
+    shell:
+        "minimap "
+
